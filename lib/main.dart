@@ -16,8 +16,7 @@ class GlorifyApp extends StatelessWidget {
       title: 'GLORIFY',
       debugShowCheckedModeBanner: false,
       theme: ThemeData(
-        primarySwatch: Colors.purple,
-      ),
+        primarySwatch: Colors.purple,    ),
       initialRoute: '/splash',
       routes: {
         '/splash': (context) => const SplashScreen(),

@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # glorify
 
 A new Flutter project.
@@ -14,3 +15,7 @@ A few resources to get you started if this is your first Flutter project:
 For help getting started with Flutter development, view the
 [online documentation](https://docs.flutter.dev/), which offers tutorials,
 samples, guidance on mobile development, and a full API reference.
+=======
+# GLORIFY
+Hair Salon Booking app
+>>>>>>> d6b2a2a47ca0199f357a2b334d1b7fe1aefcdd55

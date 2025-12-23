@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 
 class AppointmentsScreen extends StatefulWidget {
-  const AppointmentsScreen({Key? key}) : super(key: key);
+  const AppointmentsScreen({super.key});
 
   @override
   State<AppointmentsScreen> createState() => _AppointmentsScreenState();
@@ -11,13 +11,13 @@ class _AppointmentsScreenState extends State<AppointmentsScreen> with SingleTick
   late TabController _tabController;
 
   final List<Map<String, dynamic>> upcomingAppointments = [
-    {'service': 'Hair Styling', 'date': 'Dec 15, 2024', 'time': '10:00 AM', 'price': '₦8,000', 'status': 'Confirmed', 'icon': Icons.brush, 'color': Colors.pink},
-    {'service': 'Hair Treatment', 'date': 'Dec 20, 2024', 'time': '02:00 PM', 'price': '₦15,000', 'status': 'Pending', 'icon': Icons.spa, 'color': Colors.blue},
+    {'service': 'Hair Styling', 'date': 'Dec 15, 2025', 'time': '10:00 AM', 'price': '₦8,000', 'status': 'Confirmed', 'icon': Icons.brush, 'color': Colors.pink},
+    {'service': 'Hair Treatment', 'date': 'Dec 20, 2025', 'time': '02:00 PM', 'price': '₦15,000', 'status': 'Pending', 'icon': Icons.spa, 'color': Colors.blue},
   ];
 
   final List<Map<String, dynamic>> pastAppointments = [
-    {'service': 'Haircut', 'date': 'Dec 5, 2024', 'time': '11:00 AM', 'price': '₦5,000', 'status': 'Completed', 'icon': Icons.content_cut, 'color': Colors.orange},
-    {'service': 'Hair Coloring', 'date': 'Nov 28, 2024', 'time': '03:00 PM', 'price': '₦12,000', 'status': 'Completed', 'icon': Icons.palette, 'color': Colors.purple},
+    {'service': 'Haircut', 'date': 'Dec 5, 2025', 'time': '11:00 AM', 'price': '₦5,000', 'status': 'Completed', 'icon': Icons.content_cut, 'color': Colors.orange},
+    {'service': 'Hair Coloring', 'date': 'Nov 28, 2025', 'time': '03:00 PM', 'price': '₦12,000', 'status': 'Completed', 'icon': Icons.palette, 'color': Colors.purple},
   ];
 
   @override

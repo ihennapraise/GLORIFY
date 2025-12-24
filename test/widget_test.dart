@@ -5,6 +5,8 @@
 // gestures. You can also use WidgetTester to find child widgets in the widget
 // tree, read text, and verify that the values of widget properties are correct.
 
+// ignore_for_file: unused_import
+
 import 'package:flutter/material.dart';
 import 'package:flutter_test/flutter_test.dart';
 
@@ -13,7 +15,11 @@ import 'package:glorify/main.dart';
 void main() {
   testWidgets('Counter increments smoke test', (WidgetTester tester) async {
     // Build our app and trigger a frame.
+ HEAD
     await tester.pumpWidget(const GlorifyApp());
+
+    await tester.pumpWidget(const GlorifyApp() as Widget);
+ 3ad6c163fd420cbf65ef9ab484b94c2decb7179d
 
     // Verify that our counter starts at 0.
     expect(find.text('0'), findsOneWidget);
@@ -27,4 +33,8 @@ void main() {
     expect(find.text('0'), findsNothing);
     expect(find.text('1'), findsOneWidget);
   });
+}
+
+class GlorifyApp {
+  const GlorifyApp();
 }
